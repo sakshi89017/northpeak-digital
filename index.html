@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NorthPeak Digital — Web Design, Development &amp; Growth Agency</title>
+<meta name="description" content="NorthPeak Digital is a modern agency building websites, brands and growth systems that get real results.">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="style.css?v=1.1">
+</head>
+<body>
+
+<!-- ========== SKIP LINK (Accessibility) ========== -->
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- ========== NAVBAR ========== -->
+<header class="navbar" id="navbar">
+  <div class="container navbar__inner">
+    <a href="#home" class="navbar__brand" aria-label="NorthPeak Digital home">
+      <span class="navbar__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="22" height="22"><path d="M2 19 L9 7 L13 13 L16 8 L22 19 Z" fill="currentColor"/></svg>
+      </span>
+      NorthPeak <span>Digital</span>
+    </a>
+
+    <nav class="navbar__nav" id="primary-nav" aria-label="Primary">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <a href="#contact" class="btn btn--primary btn--sm navbar__cta">Start a Project</a>
+
+    <button class="navbar__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <div class="hero__copy reveal">
+        <div class="eyebrow eyebrow--status">
+          <span class="status-dot"></span>
+          Now accepting Q3 projects
+        </div>
+        <h1 class="hero__title">We build brands that <span class="text-gradient"><em>climb</em></span>, not just launch.</h1>
+        <p class="hero__desc">NorthPeak Digital designs websites, products and marketing systems for ambitious companies. Strategy, design and engineering under one roof — built to compound results, not just look good on day one.</p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary">Get Started <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          <a href="#services" class="btn btn--ghost">View Services</a>
+        </div>
+        <div class="hero__trust">
+          <div class="hero__trust-stars" aria-hidden="true">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <span>4.9/5 Rating &middot; 120+ Clients &middot; 250+ Projects</span>
+        </div>
+      </div>
+
+      <div class="hero__art reveal">
+        <img src="hero_artwork.jpg?v=1.2" alt="Abstract glowing glass mountain peaks with warm golden light reflections" class="hero__image">
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">What we do</p>
+        <h2>Services built for growth</h2>
+        <p class="section__desc">From first sketch to full-scale campaign, our teams cover every layer a modern brand needs to compete online.</p>
+      </div>
+
+      <div class="services__grid">
+        <article class="service-card reveal">
+          <div class="service-card__header">
+            <div class="service-card__icon"><i class="fa-solid fa-pen-ruler" aria-hidden="true"></i></div>
+            <span class="service-card__number">01</span>
+          </div>
+          <h3>Web Design</h3>
+          <p>Clean, conversion-focused interfaces tailored to your brand and your customers' behavior.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-card__header">
+            <div class="service-card__icon"><i class="fa-solid fa-code" aria-hidden="true"></i></div>
+            <span class="service-card__number">02</span>
+          </div>
+          <h3>Web Development</h3>
+          <p>Fast, scalable builds using modern frameworks — engineered for reliability at any traffic scale.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-card__header">
+            <div class="service-card__icon"><i class="fa-solid fa-magnifying-glass-chart" aria-hidden="true"></i></div>
+            <span class="service-card__number">03</span>
+          </div>
+          <h3>SEO Optimization</h3>
+          <p>Technical and content SEO that moves you up the rankings and keeps you there.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-card__header">
+            <div class="service-card__icon"><i class="fa-solid fa-palette" aria-hidden="true"></i></div>
+            <span class="service-card__number">04</span>
+          </div>
+          <h3>Branding</h3>
+          <p>Distinct visual identities — logo, voice and system — that make your brand memorable.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-card__header">
+            <div class="service-card__icon"><i class="fa-solid fa-bullhorn" aria-hidden="true"></i></div>
+            <span class="service-card__number">05</span>
+          </div>
+          <h3>Digital Marketing</h3>
+          <p>Paid, social and email strategies engineered around measurable return on spend.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-card__header">
+            <div class="service-card__icon"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></div>
+            <span class="service-card__number">06</span>
+          </div>
+          <h3>UI/UX Design</h3>
+          <p>Research-driven product design that makes complex experiences feel effortless.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS / RESULTS ========== -->
+  <section class="results section" id="testimonials">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">Track record</p>
+        <h2>Results our clients <em>talk about</em></h2>
+        <p class="section__desc">We measure success the way our clients do — in growth, not just deliverables.</p>
+      </div>
+
+      <div class="stats reveal">
+        <div class="stats__item">
+          <span class="stats__num" data-count="150" data-suffix="+">0</span>
+          <span class="stats__label">Projects Delivered</span>
+        </div>
+        <div class="stats__item">
+          <span class="stats__num" data-count="98" data-suffix="%">0</span>
+          <span class="stats__label">Client Satisfaction</span>
+        </div>
+        <div class="stats__item">
+          <span class="stats__num" data-count="8" data-suffix="">0</span>
+          <span class="stats__label">Years Experience</span>
+        </div>
+        <div class="stats__item">
+          <span class="stats__num" data-count="40" data-suffix="+">0</span>
+          <span class="stats__label">Team Members</span>
+        </div>
+      </div>
+
+      <div class="testimonials__grid">
+        <figure class="testimonial-card reveal">
+          <div class="testimonial-card__stars" aria-label="Rated 5 out of 5 stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <blockquote>"NorthPeak rebuilt our site and our conversion rate nearly doubled within two months. They understood our customers better than we did."</blockquote>
+          <figcaption>
+            <span class="testimonial-card__name">Maya Chen</span>
+            <span class="testimonial-card__company">Founder, Lumio Home</span>
+          </figcaption>
+        </figure>
+
+        <figure class="testimonial-card reveal">
+          <div class="testimonial-card__stars" aria-label="Rated 5 out of 5 stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <blockquote>"The branding work gave us a genuinely distinct identity. Every client meeting since has opened with a compliment on our new look."</blockquote>
+          <figcaption>
+            <span class="testimonial-card__name">Daniel Okafor</span>
+            <span class="testimonial-card__company">CEO, Vantage Legal</span>
+          </figcaption>
+        </figure>
+
+        <figure class="testimonial-card reveal">
+          <div class="testimonial-card__stars" aria-label="Rated 5 out of 5 stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <blockquote>"Organic traffic grew 3x in six months. The SEO team is meticulous, and the reporting made it easy to see exactly what was working."</blockquote>
+          <figcaption>
+            <span class="testimonial-card__name">Priya Ramesh</span>
+            <span class="testimonial-card__company">Marketing Lead, Fieldnote</span>
+          </figcaption>
+        </figure>
+
+        <div class="testimonial-card metric-widget reveal">
+          <div class="metric-widget__header">
+            <h4>System Performance</h4>
+            <span class="metric-widget__badge">Verified Audit</span>
+          </div>
+          <div class="metric-widget__body">
+            <div class="gauge-container">
+              <div class="circular-gauge" style="--percent: 100;">
+                <div class="circular-gauge__value">100</div>
+              </div>
+              <div class="gauge-label">
+                <strong>Performance</strong>
+                <span>Lighthouse Core Vitals</span>
+              </div>
+            </div>
+            <div class="chart-container">
+              <svg class="mini-chart" viewBox="0 0 160 50">
+                <defs>
+                  <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#0F766E" stop-opacity="0.3"/>
+                    <stop offset="100%" stop-color="#0F766E" stop-opacity="0.0"/>
+                  </linearGradient>
+                </defs>
+                <path d="M 0 45 Q 25 35 50 40 T 100 20 T 130 10 L 160 5" fill="none" stroke="#0F766E" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M 0 45 Q 25 35 50 40 T 100 20 T 130 10 L 160 5 L 160 50 L 0 50 Z" fill="url(#chartGrad)"/>
+              </svg>
+              <div class="chart-label">
+                <strong>+185%</strong>
+                <span>Organic Search Traffic</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRICING ========== -->
+  <section class="pricing section" id="pricing">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">Plans</p>
+        <h2>Simple, <em>transparent</em> pricing</h2>
+        <p class="section__desc">Choose the plan that fits where you are today. Upgrade any time as your needs grow.</p>
+      </div>
+
+      <div class="pricing__grid">
+
+        <!-- Starter -->
+        <article class="pricing-card reveal">
+          <h3>Starter</h3>
+          <p class="pricing-card__desc">For small businesses getting their first real online presence.</p>
+          <p class="pricing-card__price"><span>$299</span>/mo</p>
+          <ul class="pricing-card__features">
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> 5-page responsive website</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Basic on-page SEO</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Contact form integration</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> 1 round of revisions</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Email support</li>
+          </ul>
+          <a href="#contact" class="btn btn--outline">Choose Starter</a>
+        </article>
+
+        <!-- Professional (highlighted) -->
+        <article class="pricing-card pricing-card--featured reveal">
+          <span class="pricing-card__badge">Most Popular</span>
+          <h3>Professional</h3>
+          <p class="pricing-card__desc">For growing companies that need design, dev and marketing together.</p>
+          <p class="pricing-card__price"><span>$699</span>/mo</p>
+          <ul class="pricing-card__features">
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> 15-page custom website</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Advanced SEO &amp; analytics</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Brand identity refresh</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Monthly performance report</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Priority support</li>
+          </ul>
+          <a href="#contact" class="btn btn--primary">Choose Professional</a>
+        </article>
+
+        <!-- Enterprise -->
+        <article class="pricing-card reveal">
+          <h3>Enterprise</h3>
+          <p class="pricing-card__desc">For established organizations with complex, multi-team needs.</p>
+          <p class="pricing-card__price"><span>Custom</span></p>
+          <ul class="pricing-card__features">
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Unlimited pages &amp; integrations</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Dedicated project team</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Custom SLAs</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Full marketing strategy</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> 24/7 dedicated support</li>
+          </ul>
+          <a href="#contact" class="btn btn--outline">Contact Us</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact section" id="contact">
+    <div class="container contact__inner">
+      <div class="section__head section__head--left reveal">
+        <p class="eyebrow">Get in touch</p>
+        <h2>Let's build something worth <em>climbing for</em></h2>
+        <p class="section__desc">Tell us a bit about your project. We reply within one business day.</p>
+
+        <ul class="contact__info">
+          <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> hello@northpeakdigital.com</li>
+          <li><i class="fa-solid fa-phone" aria-hidden="true"></i> +1 (555) 214-8890</li>
+          <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Denver, CO — Remote friendly</li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" autocomplete="name">
+          <span class="form-error" id="nameError" role="alert"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@company.com" autocomplete="email">
+          <span class="form-error" id="emailError" role="alert"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" autocomplete="tel">
+          <span class="form-error" id="phoneError" role="alert"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us about your project"></textarea>
+          <span class="form-error" id="messageError" role="alert"></span>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+
+        <p class="form-success" id="formSuccess" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <a href="#home" class="navbar__brand" aria-label="NorthPeak Digital home">
+        <span class="navbar__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22"><path d="M2 19 L9 7 L13 13 L16 8 L22 19 Z" fill="currentColor"/></svg>
+        </span>
+        NorthPeak <span>Digital</span>
+      </a>
+      <p>Design, development and growth — built to compound.</p>
+      <div class="footer__social">
+        <a href="#" aria-label="NorthPeak Digital on X (Twitter)"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+        <a href="#" aria-label="NorthPeak Digital on LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+        <a href="#" aria-label="NorthPeak Digital on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+        <a href="#" aria-label="NorthPeak Digital on Dribbble"><i class="fa-brands fa-dribbble" aria-hidden="true"></i></a>
+      </div>
+    </div>
+
+    <nav class="footer__links" aria-label="Footer">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="footer__bottom">
+    <p>&copy; <span id="year"></span> NorthPeak Digital. All rights reserved.</p>
+    <p><a href="https://digitalheroesco.com" target="_blank" rel="noopener">Built for Digital Heroes Training Task</a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
