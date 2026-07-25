@@ -888,10 +888,14 @@ textarea:focus-visible {
   transform: translateY(-3px);
 }
 
-.footer__links h4 {
+.footer__links-title {
   color: var(--white);
   font-size: 0.95rem;
   margin-bottom: 18px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.15;
+  margin-top: 0;
 }
 
 .footer__links ul {
@@ -1072,7 +1076,7 @@ textarea:focus-visible {
   align-items: center;
   gap: 8px;
   background: rgba(16, 185, 129, 0.08);
-  color: var(--success);
+  color: #065F46;
   border: 1px solid rgba(16, 185, 129, 0.16);
   padding: 6px 14px;
   border-radius: 99px;
@@ -1113,7 +1117,7 @@ textarea:focus-visible {
   border-bottom: 1px solid var(--border);
   padding-bottom: 12px;
 }
-.metric-widget__header h4 {
+.metric-widget__header h3 {
   font-family: var(--font-body);
   font-size: 0.95rem;
   font-weight: 600;
