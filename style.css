@@ -472,6 +472,16 @@ textarea:focus-visible {
   color: transparent;
 }
 
+.accent {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-style: italic;
+  font-weight: 400;
+  font-family: var(--font-display);
+}
+
 .hero__desc {
   font-size: 1.1rem;
   color: var(--slate);
