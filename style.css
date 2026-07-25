@@ -689,9 +689,10 @@ textarea:focus-visible {
   color: var(--ink);
 }
 
-.pricing-card__features i {
+.pricing-card__features svg {
   color: var(--blue);
   margin-top: 3px;
+  flex-shrink: 0;
 }
 
 .pricing-card--featured {
@@ -765,9 +766,11 @@ textarea:focus-visible {
   font-size: 0.95rem;
 }
 
-.contact__info i {
+.contact__info svg {
   color: var(--blue);
   width: 18px;
+  height: 18px;
+  flex-shrink: 0;
 }
 
 .contact-form {
