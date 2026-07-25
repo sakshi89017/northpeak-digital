@@ -23,6 +23,10 @@
   --error: #EF4444;
 
   --gradient: linear-gradient(135deg, var(--blue), var(--growth));
+  --bg-primary: #FFFFFF;
+  --navbar-bg: rgba(255, 255, 255, 0.85);
+  --badge-bg: rgba(255, 255, 255, 0.75);
+  --badge-border: rgba(255, 255, 255, 0.4);
 
   /* Typography */
   --font-display: 'Playfair Display', 'Inter', serif;
@@ -37,6 +41,19 @@
   --shadow-lg: 0 20px 50px rgba(15, 37, 80, 0.1);
 
   --container-w: 1280px;
+}
+
+html.dark {
+  --bg-primary: #0B1120;
+  --surface: #111827;
+  --surface-alt: #0B1120;
+  --ink: #FFFFFF;
+  --slate: #94A3B8;
+  --slate-light: #6B7280;
+  --border: #1F2937;
+  --navbar-bg: rgba(11, 17, 32, 0.85);
+  --badge-bg: rgba(17, 24, 39, 0.75);
+  --badge-border: rgba(255, 255, 255, 0.1);
 }
 
 /* ==========================================================================
@@ -71,10 +88,35 @@ body {
   margin: 0;
   font-family: var(--font-body);
   color: var(--ink);
-  background: var(--white);
+  background: var(--bg-primary);
   font-size: 16px;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
+}
+
+/* Smooth transitions for theme switching */
+body,
+.navbar,
+.navbar__nav a,
+.services,
+.service-card,
+.testimonial-card,
+.pricing,
+.pricing-card,
+.contact,
+.contact-form,
+.why-us,
+.why-card,
+.process,
+.process-step,
+.experience,
+.experience-card-mockup,
+.experience-visual,
+.hero,
+.hero__badge-card,
+.qualifying-strip,
+h1, h2, h3, h4, p, span, li, a, button, input, textarea {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 @media (min-width: 901px) {
@@ -235,10 +277,57 @@ textarea:focus-visible {
   position: sticky;
   top: 0;
   z-index: 500;
-  background: rgba(255, 255, 255, 0.85);
+  background: var(--navbar-bg);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid transparent;
-  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Theme Toggle Button Style */
+.theme-toggle {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--slate);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+.theme-toggle:hover {
+  color: var(--blue);
+  border-color: var(--blue);
+  background: var(--surface-alt);
+}
+html.dark .theme-toggle:hover {
+  color: var(--growth-light);
+  border-color: var(--growth-light);
+  background: rgba(20, 184, 166, 0.1);
+}
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 3px;
+}
+.theme-toggle .sun-icon {
+  display: none;
+}
+.theme-toggle .moon-icon {
+  display: block;
+}
+html.dark .theme-toggle .sun-icon {
+  display: block;
+}
+html.dark .theme-toggle .moon-icon {
+  display: none;
+}
+@media (max-width: 640px) {
+  .theme-toggle {
+    margin-left: auto;
+    margin-right: 8px;
+  }
 }
 
 .navbar.is-scrolled {
@@ -351,7 +440,7 @@ textarea:focus-visible {
   position: relative;
   overflow: hidden;
   padding: 58px 0 100px;
-  background: var(--surface);
+  background: var(--bg-primary);
 }
 .hero::before {
   content: "NP";
@@ -394,10 +483,10 @@ textarea:focus-visible {
   position: absolute;
   bottom: 40px;
   left: -40px;
-  background: rgba(255, 255, 255, 0.75);
+  background: var(--badge-bg);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid var(--badge-border);
   box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
   border-radius: var(--radius-md);
   padding: 16px 20px;
@@ -555,7 +644,7 @@ textarea:focus-visible {
    Services
    ========================================================================== */
 .services {
-  background: var(--white);
+  background: var(--bg-primary);
 }
 
 .services__grid {
@@ -576,7 +665,7 @@ textarea:focus-visible {
   transform: translateY(-8px);
   box-shadow: var(--shadow-md);
   border-color: transparent;
-  background: var(--white);
+  background: var(--surface);
 }
 
 .service-card__header {
@@ -626,7 +715,7 @@ textarea:focus-visible {
    Results / Testimonials
    ========================================================================== */
 .results {
-  background: var(--surface);
+  background: var(--bg-primary);
 }
 
 .stats {
@@ -666,11 +755,11 @@ textarea:focus-visible {
 }
 
 .testimonial-card {
-  background: var(--white);
+  background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: 30px 28px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .testimonial-card:hover {
@@ -711,7 +800,7 @@ textarea:focus-visible {
    Pricing
    ========================================================================== */
 .pricing {
-  background: var(--white);
+  background: var(--bg-primary);
 }
 
 .pricing__grid {
@@ -729,7 +818,7 @@ textarea:focus-visible {
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: 36px 30px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .pricing-card:hover {
@@ -828,7 +917,7 @@ textarea:focus-visible {
    Contact
    ========================================================================== */
 .contact {
-  background: var(--surface);
+  background: var(--bg-primary);
 }
 
 .contact__inner {
@@ -861,11 +950,12 @@ textarea:focus-visible {
 }
 
 .contact-form {
-  background: var(--white);
+  background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: 36px;
   box-shadow: var(--shadow-md);
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .form-group {
@@ -1264,7 +1354,7 @@ textarea:focus-visible {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: var(--white);
+  background: var(--surface);
 }
 .circular-gauge__value {
   position: relative;
@@ -1367,7 +1457,7 @@ textarea:focus-visible {
    Why Us Section
    ========================================================================== */
 .why-us {
-  background: var(--surface);
+  background: var(--bg-primary);
 }
 .why-us__grid {
   display: grid;
@@ -1375,11 +1465,11 @@ textarea:focus-visible {
   gap: 24px;
 }
 .why-card {
-  background: var(--white);
+  background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: 32px 28px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
 }
 .why-card:hover {
   transform: translateY(-6px);
@@ -1432,10 +1522,11 @@ textarea:focus-visible {
 }
 .process-step {
   position: relative;
-  background: var(--white);
+  background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: 40px 32px;
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 .process-step__number {
   font-family: var(--font-display);
@@ -1466,7 +1557,7 @@ textarea:focus-visible {
    Product Experience
    ========================================================================== */
 .experience {
-  background: var(--white);
+  background: var(--bg-primary);
 }
 .experience__inner {
   display: grid;
@@ -1496,7 +1587,7 @@ textarea:focus-visible {
   filter: blur(40px);
 }
 .experience-card-mockup {
-  background: var(--white);
+  background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
   padding: 24px;
@@ -1506,6 +1597,7 @@ textarea:focus-visible {
   gap: 16px;
   z-index: 1;
   width: 280px;
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 .experience-card-mockup .circular-gauge {
   flex-shrink: 0;
